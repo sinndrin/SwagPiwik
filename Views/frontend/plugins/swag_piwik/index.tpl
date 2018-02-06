@@ -63,9 +63,9 @@ piwikTracker.trackEcommerceCartUpdate({$sAmount});
 {/if}
 
 {literal}
-piwikTracker.setDocumentTitle(www.sinndrin-shop.ch / {/literal}{block name='frontend_index_header_title'}{strip}
+piwikTracker.setDocumentTitle("www.sinndrin-shop.ch / {/literal}{block name='frontend_index_header_title'}{strip}
 {if $sBreadcrumb}{foreach from=$sBreadcrumb|array_reverse item=breadcrumb}{$breadcrumb.name} | {/foreach}{/if}{{config name=sShopname}|escapeHtml}
-{/strip}{/block}{literal});
+{/strip}{/block}{literal}");
 piwikTracker.setDomains(["*.www.sinndrin.ch","*.support.sinndrin.org","*.www.sinndrin-shop.ch"]);
 piwikTracker.enableCrossDomainLinking();
 piwikTracker.trackPageView();
