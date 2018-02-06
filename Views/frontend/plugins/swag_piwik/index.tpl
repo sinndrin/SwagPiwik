@@ -66,6 +66,6 @@ piwikTracker.trackEcommerceCartUpdate({$sAmount});
 piwikTracker.trackPageView();
 piwikTracker.enableLinkTracking();
 } catch( err ) {}
-</script><noscript><p><img src="http://{/literal}{$SwagPiwik.p_url}{literal}piwik.php?idsite={/literal}{$SwagPiwik.p_ID}{literal}" style="border:0" alt="" /></p></noscript>
+</script><noscript><p><img src="http://{/literal}{$SwagPiwik.p_url}{literal}piwik.php?idsite={/literal}{$SwagPiwik.p_ID}{literal}&rec=1" style="border:0" alt="" /></p></noscript>
 {/literal}
 {/block}
